@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace MyZoo
 {
-    public class Djur
+    public class Djur//My base class
     {
-        public string name = "noName";
-        public string breed = "noBreed";
-        public string size = "noSize";
-        public int age = 0;
-        public string gender = "noGender";
-        public Djur(string name, string breed, string size, int age, string gender)
+        public string name; //Fields
+        public string breed;
+        public string size;
+        public int age;
+        public string gender;
+        public Djur(string name = "noName", string breed = "noBreed", string size = "nosize", int age = 0, string gender = "noGender")//Constructor with default
         {
             this.name = name;
             this.breed = breed;
@@ -21,10 +21,7 @@ namespace MyZoo
             this.age = age;
             this.gender = gender;
         }
-        public Djur()
-        {
-        }
-        public static void eat()
+        public static void eat()//Methods
         {
             Console.WriteLine("Chew slaffs slaffs");
         }
