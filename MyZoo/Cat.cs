@@ -10,21 +10,16 @@ namespace MyZoo
         public Cat(string name = "Clarabella", string breed = "Farm cat", string size = "Small", int age = 10, string gender = "Female") : base(name, breed, size, age, gender)//Inherited constructor from base class and new fields for this specific class
         
         {
-            this.name = name;
-            this.breed = breed;
-            this.size = size;
-            this.age = age;
-            this.gender = gender;
             this.hunter = "Loves to be out hunting";
         }
-        public virtual void thisCat()//Methods, both inherited and new one for this specific sub class
+        public virtual void printCat()//Methods, both inherited and new one for this specific sub class
         {
             Console.WriteLine($"My name is {name} and I am a {breed} which is a {size} model.\nI am {age} years old {gender}. Nice meeting you human!");
-            Djur.eat();
-            Djur.play();
-            Djur.sleep();
             this.catchesMice();
             this.makeSound();
+            this.eat();
+            this.play();
+            this.sleep();   
         }
         public virtual void makeSound()//INherited method from base class but giving a new value
         {

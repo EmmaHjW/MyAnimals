@@ -25,21 +25,21 @@ namespace MyZoo
                 Console.Clear();//A presentation and a menu of my animals
                 switch (number)//A switch-case to make a good looking and functioning menu
                     {
-                    case 1:
-                        Dog dog1 = new Dog();
-                            dog1.thisDog();
+                        case 1:
+                            Dog dog1 = new Dog();
+                            dog1.printDog();
                             Dog2 dog2 = new Dog2();
-                            dog2.thisDog();
+                            dog2.printDog();
                             Dog3 dog3 = new Dog3();
-                            dog3.thisDog();
+                            dog3.printDog();
                             break;
                         case 2:
-                        Horse horse = new Horse();
-                            horse.thisHorse();
+                            Horse horse = new Horse();
+                            horse.printHorse();
                             break;
                         case 3:
                         Cat cat = new Cat();
-                            cat.thisCat();
+                            cat.printCat();
                             break;
                          case 4:
                         continueProgram = false;//And if user want to quit program they get this massage

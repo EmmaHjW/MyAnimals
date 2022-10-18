@@ -21,15 +21,15 @@ namespace MyZoo
             this.age = age;
             this.gender = gender;
         }
-        public static void eat()//Methods
+        public void eat()//Methods
         {
             Console.WriteLine("Chew slaffs slaffs");
         }
-        public static void sleep()
+        public void sleep()
         {
             Console.WriteLine("Snore snore dream away");
         }
-        public static void play()
+        public void play()
         {
             Console.WriteLine("Play with me");
         }
